@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context=".FullscreenActivity">
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/basket1" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:text="SCORE COUNTER"
+        android:textAlignment="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+        android:textColor="#FFFFFF"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/teamA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="35dp"
+        android:text="TEAM A"
+        android:textAlignment="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+        android:textColor="#FFFFFF"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/teamB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="20dp"
+        android:text="TEAM B"
+        android:textAlignment="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+        android:textColor="#FFFFFF"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        />
+
+
+
+    <TextView
+        android:id="@+id/TeamAScore"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/teamA"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="25dp"
+        android:background="#86817A"
+        android:padding="5dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/TeamA3"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/TeamAScore"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="40dp"
+        android:background="#CB7A01"
+        android:padding="5dp"
+        android:text="3 POINTS"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:onClick="teamA3"
+        />
+
+    <Button
+        android:id="@+id/TeamA2"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/TeamA3"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="15dp"
+        android:background="#FF9A00"
+        android:padding="5dp"
+        android:text="2 POINTS"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:onClick="teamA2"
+        />
+
+    <Button
+        android:id="@+id/TeamA1"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/TeamA2"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="10dp"
+        android:background="#F6B148"
+        android:padding="4dp"
+        android:text="FREE Throw"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:onClick="teamA1"
+        />
+
+    <Button
+        android:id="@+id/TeamAundo"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/TeamA1"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="30dp"
+        android:background="#FFC976"
+        android:padding="5dp"
+        android:text="undo"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:onClick="undoA"
+        />
+
+
+
+    <TextView
+        android:id="@+id/TeamBScore"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/teamA"
+        android:layout_marginTop="25dp"
+        android:background="#86817A"
+        android:padding="5dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentRight="true"
+        />
+
+    <Button
+        android:id="@+id/TeamB3"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/TeamAScore"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:background="#CB7A01"
+        android:padding="5dp"
+        android:text="3 POINTS"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginRight="23dp"
+        android:layout_alignParentRight="true"
+        android:onClick="teamB3"
+        />
+
+    <Button
+        android:id="@+id/TeamB2"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/TeamA3"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="14dp"
+        android:background="#FF9A00"
+        android:padding="5dp"
+        android:text="2 POINTS"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:layout_marginRight="23dp"
+        android:layout_alignParentRight="true"
+        android:textStyle="bold"
+        android:onClick="teamB2"
+        />
+
+    <Button
+        android:id="@+id/TeamB1"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/TeamA2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#F6B148"
+        android:padding="5dp"
+        android:text="FREE throw"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:layout_marginRight="23dp"
+        android:layout_alignParentRight="true"
+        android:textStyle="bold"
+        android:onClick="teamB1"
+        />
+
+    <Button
+        android:id="@+id/TeamBundo"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/TeamA1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:background="#FFC976"
+        android:padding="5dp"
+        android:text="undo"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginRight="23dp"
+        android:layout_alignParentRight="true"
+        android:onClick="undoB"
+        />
+
+    <Button
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:background="#ccFFff"
+        android:padding="5dp"
+        android:text="RESULt"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:onClick="result"
+        />
+
+
+    <TextView
+        android:id="@+id/winnerr"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_above="@id/result"
+        android:layout_margin="35dp"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="35dp"
+        />
+
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:text="START"
+            android:background="#FFA"
+            android:textColor="#000000"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="85dp"
+            android:onClick="reset"
+            android:textStyle="bold"
+            android:textSize="15dp"/>
+
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/fullscreen_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:textColor="#33b5e5"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="?metaButtonBarStyle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/black_overlay"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <Button
+                android:id="@+id/dummy_button"
+                style="?metaButtonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/dummy_button" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>
